@@ -1,0 +1,17 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "proxy": "node $NODE_DEBUG_OPTION ./node_modules/.bin/intern-runner --config=./intern --proxyOnly=true",
+    "test": "node $NODE_DEBUG_OPTION ./node_modules/.bin/intern-runner --config=./intern",
+    "open": "node -e \"require('opn')('http://localhost:9000/__intern/client.html?config=intern'); process.exit()\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "intern": "^3.4.2",
+    "opn": "^4.0.2"
+  }
+}
